@@ -1,0 +1,127 @@
+:root{
+--Very-Dark-Grayish-Blue: hsl(217, 19%, 35%);
+--Desaturated-Dark-Blue: hsl(214, 17%, 51%);
+--Grayish-Blue: hsl(212, 23%, 69%);
+--Light-Grayish-Blue: hsl(210, 46%, 95%);
+}
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Manrope", sans-serif;
+}
+body{
+    background-color: var(--Light-Grayish-Blue);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card{
+    width: 700px;
+    height: 280px;
+    display: flex;
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+.pic{
+    width: 50%;
+    display: flex;
+}
+.img{
+    width: 100%;
+    border-radius: 15px 0px 0px 15px ;
+}
+.right{
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    gap: 1.5rem;
+}
+.top{
+    height: 70%;
+}
+.title{
+    font-size: 20px;
+    font-weight: bolder;
+    color: var(--Very-Dark-Grayish-Blue);
+    margin-bottom: 1rem;
+}
+.sub-title{
+    font-size: 12px;
+    color: var(--Grayish-Blue);
+    margin-bottom: 1rem;
+}
+.bottom{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.avatar{
+    display: flex;
+    gap: 1rem;
+}
+.profile{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+.name{
+    font-size: 13px;
+    color: var(--Very-Dark-Grayish-Blue);
+}
+.date{
+    margin-top: 5px;
+    color: var(--Grayish-Blue);
+}
+#button{
+    width: 35px;
+    height: 35px; 
+    border-radius:50% ;
+    background-color: var(--Light-Grayish-Blue);
+    border: none;
+    cursor: pointer;
+}
+
+.icon{
+    width: 50%;
+}
+.share{
+    background-color: var(--Very-Dark-Grayish-Blue);
+    padding: 15px;
+    width: 250px;
+    height: 40px;
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 10px;
+    position: relative;
+    bottom: 120px;
+    left: 210px;
+}
+.share::after{
+    content: "";
+    background-color: var(--Very-Dark-Grayish-Blue);
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: 100%;
+    right: 50%;
+    transform:  translate(-50%,-60%) rotate(45deg);
+}
+
+.icons{
+    display: flex;
+    gap: 1rem;
+}
+.texte{
+    color: var(--Grayish-Blue);
+}
+.hidden{
+    display: none;
+}
